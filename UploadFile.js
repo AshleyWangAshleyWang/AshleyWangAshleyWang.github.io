@@ -114,5 +114,5 @@ fileInput.addEventListener("change", function () {
 
         document.getElementById('output').innerHTML = reader.result;  //把文件原始內容放到output裡，他會在html是output的地方顯示出來
     };
-    reader.readAsBinaryString(this.files[0], 'UTF-8');
+    reader.readAsText(this.files[0], 'UTF-8');
 });

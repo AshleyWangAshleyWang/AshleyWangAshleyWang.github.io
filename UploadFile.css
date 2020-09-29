@@ -5,6 +5,7 @@
     border: 1px solid #000;
     border-radius: 15px;
     cursor: pointer;
+    outline: none;
 }
 
 #custom-button:hover {
