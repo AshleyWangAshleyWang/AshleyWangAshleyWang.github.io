@@ -1,9 +1,10 @@
-html {
+html, body {
+    height: 98.5%;
+    width: 100;
     font-family: sans-serif;
     line-height: 1.15;
     background-color: #F8FAFB;
 }
-
 
 #custom-button {
     padding: 10px;
@@ -24,13 +25,8 @@ html {
     color: #aaa;
 }
 
-#output {
-    border: 2px solid;
-}
-
-#medicineAbstract {
-    border: 2px solid;
-    position: static;
+.textArea {
+    border: 2px solid ;
 }
 
 image {
@@ -40,7 +36,8 @@ image {
 li {
     list-style: none;
     margin: 5px;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-top: 2px;
     padding: 3px;
     border-radius: 34px;
     font-weight: bolder;
@@ -48,7 +45,7 @@ li {
     line-height: 18.858px;
     width: 94px;
     height: 31px;
-    border: olive solid 4px;
+    border: olive solid 1px;
     position: relative;
 }
 
@@ -57,7 +54,7 @@ li:hover {
     color: white;
 }
 
-.flex-nav {
+ul {
     display: flex;
     justify-content: space-between;
     width: 15px;
@@ -66,18 +63,18 @@ li:hover {
     bottom: 20px;
 }
 
-#headButtons {
+nav>div:nth-child(2) {
     position: relative;
     right: 18%;
 }
 
-.labelInner {
+.pivotInner {
     display: flex;
     align-items: center;
     padding: 6px 12px;
 }
 
-.cAObUW {
+.navigationBar {
     display: flex;
     padding: 10px 30px;
     box-shadow: 2px 4px 20px 0 rgba(0, 0, 0, 0.05);
@@ -85,7 +82,6 @@ li:hover {
     align-items: center;
     margin: 15px 1%;
     border-radius: 8px;
-    background-color: burlywood;
 }
 
 #HisLogo {
@@ -104,21 +100,23 @@ li:hover {
 }
 
 #fileInputAndOutput {
-    border: olivedrab solid 1px;
-    height: 768px;
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
+    height: 87%;
+    padding: 20px;
+    margin: 0px 1% 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.01);
+    background-color: white;
 }
 
 .textArea {
     height: 90%;
     width: 49%;
     margin-top: 10px;
+    margin-left: 5px;
 } 
 
 
-.buttonPicture {
+.navPivotPicture {
     height: 20px;
     width: 20px;
 }
@@ -146,11 +144,16 @@ a:hover {
     height: 40px;
 }
 
-#userInfo >:first-child {
+#userInfo >:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     min-width: 100px;
+}
+
+#userInfo >:nth-child(2) {
+    padding-left: 13px;
+    float: right;
 }
 
 .userInfoSpan {
@@ -158,8 +161,4 @@ a:hover {
     height: 18px;
     box-sizing: border-box;
     line-height: 18.858px;
-}
-
-#fileInputAndOutput {
-    border-radius: 8px;
 }
