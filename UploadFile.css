@@ -1,9 +1,13 @@
 html, body {
-    height: 98.5%;
+    height: 98%;
     width: 100;
     font-family: sans-serif;
     line-height: 1.15;
     background-color: #F8FAFB;
+}
+
+html {
+    border-top: #3266ff 4px solid;
 }
 
 #custom-button {
