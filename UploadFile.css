@@ -4,10 +4,19 @@ html, body {
     font-family: sans-serif;
     line-height: 1.15;
     background-color: #F8FAFB;
+    font-size: 14px;
+    
 }
 
 html {
     border-top: #3266ff 4px solid;
+    --scroll-bar: 0;
+    text-size-adjust: 100%;
+}
+
+
+* {
+    box-sizing: border-box;
 }
 
 #custom-button {
@@ -38,20 +47,26 @@ image {
 }
 
 li {
-    list-style: none;
+    display: list-item;
+    list-style-type: none;
     margin: 5px;
     margin-left: 30px;
-    margin-top: 2px;
+    margin-top: 8px;
     padding: 3px;
     border-radius: 34px;
     font-weight: bolder;
     font-size: 12px;
     line-height: 18.858px;
-    width: 94px;
+    width: 110px;
     height: 31px;
-    border: olive solid 1px;
     position: relative;
 }
+
+@media screen and (max-width: 1200px) {
+    li {
+      display: none;
+    }
+  }
 
 li:hover {
     background-color: #5c8aff;
@@ -74,14 +89,15 @@ nav>div:nth-child(2) {
 
 .pivotInner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 6px 12px;
 }
 
 .navigationBar {
     display: flex;
     padding: 10px 30px;
-    box-shadow: 2px 4px 20px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 20px 0 rgba(0, 0, 0, 0.05);
+    background-color: rgb(255, 255,255);
     justify-content: space-between;
     align-items: center;
     margin: 15px 1%;
@@ -104,7 +120,7 @@ nav>div:nth-child(2) {
 }
 
 #fileInputAndOutput {
-    height: 87%;
+    height: 92%;
     padding: 20px;
     margin: 0px 1% 15px;
     border-radius: 8px;
@@ -117,12 +133,14 @@ nav>div:nth-child(2) {
     width: 49%;
     margin-top: 10px;
     margin-left: 5px;
+    resize: none;
 } 
 
 
 .navPivotPicture {
-    height: 20px;
-    width: 20px;
+    margin-top: -10px;
+    height: 30px;
+    width: 30px;
 }
 
 .content {
@@ -144,6 +162,7 @@ a:hover {
 
 #userInfo {
     display: flex;
+    align-items: flex-start;
     width: 160px;
     height: 40px;
 }
